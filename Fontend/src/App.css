@@ -1,0 +1,179 @@
+nav{
+
+  min-width: 100%;
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+  font-size: 2rem;
+  padding-left: 1.5rem;
+  border-bottom: 2px solid  black;
+
+}
+
+.noteContainer{
+
+    width: 100%;
+    /* padding: 3px; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    /* min-height: 100vh; */
+    
+    
+  }
+  .note{
+    margin: 9px;
+    border-radius: 4px;
+    /* max-height: 350px; */
+    max-width: 350px;
+    min-height: 350px;
+    min-width: 350px;
+    border: 5px solid red;
+    border-image: linear-gradient(75deg, red ,cyan,blue, yellow); 
+    border-image-slice:1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 12px;
+    flex-direction: column;
+    /* animation: borderColor 1s linear infinite; */
+}
+
+@keyframes borderColor {
+    
+    0%{
+
+        filter: hue-rotate(0deg);
+
+    }
+
+    100%{
+
+        filter: hue-rotate(360deg);
+
+    }
+
+}
+
+.buttons{
+  display: flex;
+  min-width: 100%;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+  padding: 0px 2px;
+}
+
+.note button{
+    cursor: pointer;
+    min-width: 6rem;
+    min-height: 3rem;
+    border-radius: 9px;
+    border: 2px solid red;
+    font-size: 1.1rem;
+    background-color: transparent;
+    
+}
+
+.note button:hover{
+    cursor: pointer;
+    background-color: snow;
+    border: 2px solid black;
+    
+}
+
+.note p{
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.note h2{
+  margin-top: 9px;
+  /* text-decoration: underline; */
+  /* text-align: center; */
+  letter-spacing: 1px;
+}
+
+
+
+.form{
+
+    width: 100%;
+    border-top: 1px solid black;
+    /* padding-left: 2rem; */
+    padding: 2rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.form p{
+  font-size: 1.9rem;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.form input, textarea, button {
+  border: 2px solid black;
+  border-radius: 9px;
+  margin: 9px 0px;
+  padding: 8px;
+
+}
+
+.form textarea{
+
+    width: 80%;
+
+}
+
+.form label {
+
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+.form input {
+
+    width: 80%;
+    /* height: 2rem; */
+    padding: 5px;
+
+}
+.form button {
+    padding: 5px;
+    background-color: rgb(173, 53, 53);
+    min-height: 2.4rem;
+    min-width: 7.5rem;
+    font-weight:600;
+    border: 2px solid black;
+    border-radius: 9px;
+    margin: 9px 0px;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+footer{
+  margin-top: 1rem;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background-color: snow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  color:rgb(199, 199, 199)
+
+}
